@@ -12,6 +12,7 @@ import {
   Alert,
 } from "react-native";
 import { useLanguageContext, phoneNumberView } from "../lib";
+import { MiniMap } from "./MiniMap";
 
 interface Styles {
   container: StyleProp<ViewStyle>;
@@ -23,6 +24,7 @@ interface Styles {
 const styles: Styles = {
   container: {
     padding: 8,
+    paddingBottom: 16,
     width: "100%",
     borderWidth: StyleSheet.hairlineWidth,
     borderRadius: 12,
@@ -40,7 +42,7 @@ const styles: Styles = {
   },
 };
 
-export const Card = ({ item }) => {
+export const Card = ({ item, onPress, isSelect }) => {
   const { state } = useLanguageContext();
 
   const {
@@ -84,6 +86,9 @@ export const Card = ({ item }) => {
   return (
     <TouchableOpacity
       activeOpacity={0.7}
+      onPress={() => {
+        onPress(id);
+      }}
       key={vehicleNumber}
       style={styles.container}
     >
@@ -107,6 +112,11 @@ export const Card = ({ item }) => {
       <Text style={styles.text}>
         {`${state.i18n.t("phoneNumber")}: ${phoneNumberView(phoneNumber)}`}
       </Text>
+      {isSelect && (
+        // <View style={{ height: 200, width: "100%" }}>
+        <MiniMap point={item} />
+        // </View>
+      )}
       <View style={styles.buttonContainer}>
         <Button
           title={state.i18n.t("call")}

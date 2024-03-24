@@ -7,6 +7,7 @@ const StoreContext = React.createContext(undefined);
 
 const stateReducer = (state, { type, payload }) => {
   const filterUpdate = switchElement(state.filter, payload);
+
   switch (type) {
     case "SET_DATA":
       return {
@@ -18,6 +19,11 @@ const stateReducer = (state, { type, payload }) => {
       return {
         ...state,
         filter: filterUpdate,
+      };
+    case "SELECT_CARD":
+      return {
+        ...state,
+        selectedCard: state?.selectedCard === payload ? null : payload,
       };
     default:
       throw new Error();
@@ -83,7 +89,7 @@ export const StoreProvider = ({ children }) => {
 
 export function useStoreContext() {
   const store = React.useContext(StoreContext);
-
+  //   console.log({ store });
   if (store === undefined) {
     throw new Error("useStoreContext must be used with a StoreContext");
   }

@@ -42,7 +42,7 @@ export default function Home() {
   const { state } = useLanguageContext();
   const { store, query, dispatch, filtredData } = useStoreContext();
 
-  const { data, filter } = store;
+  const { data, filter, selectedCard } = store;
   const { refetch } = query;
 
   const { isRefetchingByUser, refetchByUser } = useRefresh(refetch);
@@ -62,8 +62,21 @@ export default function Home() {
     };
   };
 
+  const selectCard = (id) => {
+    return dispatch({
+      type: "SELECT_CARD",
+      payload: id,
+    });
+  };
+
   const renderCard = ({ item }) => {
-    return <Card item={item} />;
+    return (
+      <Card
+        item={item}
+        onPress={(id) => selectCard(id)}
+        isSelect={selectedCard === item?.id}
+      />
+    );
   };
 
   return (

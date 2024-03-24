@@ -38,7 +38,7 @@ export const Point = ({ point }: Props) => {
   return (
     <Marker
       coordinate={coordinate}
-      anchor={{ x: -0.1, y: 0.5 }}
+      anchor={{ x: 0, y: 1 }}
       image={images(typeVehicle)}
       identifier={id.toString()}
     />
