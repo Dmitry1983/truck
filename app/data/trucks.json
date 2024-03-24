@@ -1,0 +1,158 @@
+[
+  {
+    "id": 1,
+    "firstName": "Иван",
+    "middelName": "Алексеевич",
+    "lastName": "Петров",
+    "typeVehicle": "cargo",
+    "vehicleNumber": "a000a123",
+    "phoneNumber": "+79991231000",
+    "coordinate": {
+      "latitude": 44.731891,
+      "longitude": 37.771358
+    }
+  },
+  {
+    "id": 2,
+    "firstName": "Сергей",
+    "middelName": "Анатольевич",
+    "lastName": "Карпухин",
+    "typeVehicle": "passenger",
+    "vehicleNumber": "a001a123",
+    "phoneNumber": "+79991231001",
+    "coordinate": {
+      "latitude": 44.657299,
+      "longitude": 37.760516
+    }
+  },
+  {
+    "id": 3,
+    "firstName": "Сергей",
+    "middelName": "Анатольевич",
+    "lastName": "Карпухин",
+    "typeVehicle": "emergency",
+    "vehicleNumber": "a002a123",
+    "phoneNumber": "+79991231002",
+    "coordinate": {
+      "latitude": 44.673834,
+      "longitude": 37.632023
+    }
+  },
+  {
+    "id": 4,
+    "firstName": "Петр",
+    "middelName": "Анатольевич",
+    "lastName": "Борисов",
+    "typeVehicle": "passenger",
+    "vehicleNumber": "a003a123",
+    "phoneNumber": "+79991231003",
+    "coordinate": {
+      "latitude": 44.894816,
+      "longitude": 37.316361
+    }
+  },
+  {
+    "id": 5,
+    "firstName": "Сергей",
+    "middelName": "Анатольевич",
+    "lastName": "Карпухин",
+    "typeVehicle": "cargo",
+    "vehicleNumber": "a004a123",
+    "phoneNumber": "+79991231004",
+    "coordinate": {
+      "latitude": 45.282052,
+      "longitude": 37.365353
+    }
+  },
+  {
+    "id": 6,
+    "firstName": "Виталий",
+    "middelName": "Петрович",
+    "lastName": "Куриков",
+    "typeVehicle": "emergency",
+    "vehicleNumber": "a005a123",
+    "phoneNumber": "+79991231005",
+    "coordinate": {
+      "latitude": 45.260339,
+      "longitude": 38.128175
+    }
+  },
+  {
+    "id": 7,
+    "firstName": "Сергей",
+    "middelName": "Анатольевич",
+    "lastName": "Карпухин",
+    "typeVehicle": "cargo",
+    "vehicleNumber": "a006a123",
+    "phoneNumber": "+79991231006",
+    "coordinate": {
+      "latitude": 45.215616,
+      "longitude": 36.718405
+    }
+  },
+  {
+    "id": 8,
+    "firstName": "Андрей",
+    "middelName": "Иванович",
+    "lastName": "Лепкин",
+    "typeVehicle": "passenger",
+    "vehicleNumber": "a007a123",
+    "phoneNumber": "+79991231007",
+    "coordinate": {
+      "latitude": 45.620824,
+      "longitude": 38.950706
+    }
+  },
+  {
+    "id": 9,
+    "firstName": "Сергей",
+    "middelName": "Анатольевич",
+    "lastName": "Карпухин",
+    "typeVehicle": "cargo",
+    "vehicleNumber": "a008a123",
+    "phoneNumber": "+79991231008",
+    "coordinate": {
+      "latitude": 45.213651,
+      "longitude": 39.691167
+    }
+  },
+  {
+    "id": 10,
+    "firstName": "Сергей",
+    "middelName": "Анатольевич",
+    "lastName": "Карпухин",
+    "typeVehicle": "passenger",
+    "vehicleNumber": "a009a123",
+    "phoneNumber": "+79991231009",
+    "coordinate": {
+      "latitude": 44.606649,
+      "longitude": 40.105742
+    }
+  },
+  {
+    "id": 11,
+    "firstName": "Сергей",
+    "middelName": "Анатольевич",
+    "lastName": "Карпухин",
+    "typeVehicle": "emergency",
+    "vehicleNumber": "a010a123",
+    "phoneNumber": "+79991231010",
+    "coordinate": {
+      "latitude": 44.981299,
+      "longitude": 38.936263
+    }
+  },
+  {
+    "id": 12,
+    "firstName": "Денис",
+    "middelName": "Анатольевич",
+    "lastName": "Семенов",
+    "typeVehicle": "",
+    "vehicleNumber": "a011a123",
+    "phoneNumber": "+79991231011",
+    "coordinate": {
+      "latitude": 44.981299,
+      "longitude": 38.936263
+    }
+  }
+]
